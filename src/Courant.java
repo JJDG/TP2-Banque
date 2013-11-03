@@ -1,4 +1,4 @@
 
-public class Courant {
+public class Courant extends Compte{
 
 }
