@@ -1,4 +1,4 @@
 
-public class Epargne {
+public class Epargne extends Compte{
 
 }
