@@ -10,6 +10,14 @@ public class Client {
 		prenom = "inconnu";
 	}
 	
+	public String getNom(){
+		return nom;
+	}
+	
+	public String getPrenom(){
+		return prenom;
+	}
+	
 	public double soldeGeneral(){
 		double res = 0;
 		for(Compte c : lesCompte){

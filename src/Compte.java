@@ -64,4 +64,10 @@ public class Compte {
 			return false;
 		}
 	}
+	
+	public String toString(){
+		String res = "";
+		res = leClient.getNom()+" "+leClient.getPrenom()+" compte numero : "+numero+" solde : "+solde+" ";
+		return res;
+	}
 }
