@@ -23,7 +23,9 @@ public class Epargne extends Compte{
 	}
 	
 	public double getSolde(){
-		solde = super.getSolde();
+		double resSolde = super.getSolde();
+		resSolde*=taux;
+		return resSolde;
 		
 	}
 }

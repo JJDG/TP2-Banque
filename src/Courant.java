@@ -13,11 +13,12 @@ public class Courant extends Compte{
 	}
 	
 	public boolean debiteSolde(double unSolde){
-		if (unSolde >= decouvert) {
-			this.setSolde(getSolde() - unSolde);
+		this.setSolde(getSolde() - unSolde);
+		if (this.getSolde() >= decouvert) {
 			return true;
 		}
 		else{
+			this.setSolde(getSolde() +unSolde);
 			return false;
 		}
 	}
