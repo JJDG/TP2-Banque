@@ -12,11 +12,13 @@ public class Banque {
 		Client res = null;
 		for(Client c : lesClient){
 			if(c.soldeGeneral() > res.soldeGeneral()){
-				
+				res = c;
 			}
-				
-
 		}
 		return res;
+	}
+	
+	public void ajouteClient(Client unClient){
+		lesClient.add(unClient);
 	}
 }
