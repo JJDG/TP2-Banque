@@ -67,7 +67,7 @@ public class Compte {
 	
 	public String toString(){
 		String res = "";
-		res = leClient.getNom()+" "+leClient.getPrenom()+" compte numero : "+numero+" solde : "+solde+" ";
+		res = " --compte numero : "+numero+" solde : "+solde+" ";
 		return res;
 	}
 }

@@ -21,4 +21,12 @@ public class Banque {
 	public void ajouteClient(Client unClient){
 		lesClient.add(unClient);
 	}
+	
+	public String toString(){
+		String res = "La banque possede ces clients";
+		for(Client c : lesClient){
+			res+=c.toString();
+		}
+		return res;
+	}
 }

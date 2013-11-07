@@ -49,7 +49,11 @@ public class Client {
 	
 	public String toString(){
 		String res = "";
-		res += "";
+		res += this.getNom()+" "+this.getPrenom()+" possede ces comptes :\n";
+		for(Compte c : lesCompte){
+			res += c.toString();
+			res+="\n";
+		}
 		return res;
 	}
 }
