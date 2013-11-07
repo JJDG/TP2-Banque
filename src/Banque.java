@@ -9,7 +9,14 @@ public class Banque {
 	}
 	
 	public Client richeClient(){
-		Client c = null;
-		return c;
+		Client res = null;
+		for(Client c : lesClient){
+			if(c.soldeGeneral() > res.soldeGeneral()){
+				
+			}
+				
+
+		}
+		return res;
 	}
 }
