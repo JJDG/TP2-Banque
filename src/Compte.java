@@ -10,6 +10,12 @@ public class Compte {
 		solde = 0;
 	}
 	
+	public Compte(Client unClient, int unNum, int unSolde){
+		leClient = unClient;
+		numero = unNum;
+		solde = unSolde;
+	}
+	
 	public void crediteSolde(double unSolde){
 		solde+=unSolde;
 	}

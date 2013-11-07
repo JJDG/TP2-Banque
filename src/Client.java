@@ -12,6 +12,9 @@ public class Client {
 	
 	public double soldeGeneral(){
 		double res = 0;
+		for(Compte c : lesCompte){
+			res+= c.getSolde();
+		}
 		return res;
 	}
 	
