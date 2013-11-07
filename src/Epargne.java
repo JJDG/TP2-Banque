@@ -11,4 +11,19 @@ public class Epargne extends Compte{
 		super(leClient, numero, solde);
 		taux = unTaux;
 	}
+	
+	public boolean debiteSolde(double unSolde){
+		if (unSolde >= 0) {
+			this.setSolde(getSolde() - unSolde);
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	
+	public double getSolde(){
+		solde = super.getSolde();
+		
+	}
 }
