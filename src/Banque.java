@@ -23,7 +23,7 @@ public class Banque {
 	}
 	
 	public String toString(){
-		String res = "La banque possede ces clients";
+		String res = "La banque possede ces clients :\n";
 		for(Client c : lesClient){
 			res+=c.toString();
 		}
