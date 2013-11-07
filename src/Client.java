@@ -10,6 +10,12 @@ public class Client {
 		prenom = "inconnu";
 	}
 	
+	public Client(String unNom, String unPrenom){
+		lesCompte = new ArrayList<Compte>();
+		nom = unNom;
+		prenom = unPrenom;
+	}
+	
 	public String getNom(){
 		return nom;
 	}
