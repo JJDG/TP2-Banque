@@ -25,8 +25,28 @@ public class Compte {
 		return true;
 	}
 	
+	public Client getClient(){
+		return leClient;
+	}
+	
+	public void setClient(Client unClient){
+		leClient = unClient;
+	}
+	
 	public double getSolde(){
 		return solde;
+	}
+	
+	public void setSolde(double unSolde){
+		solde = unSolde;
+	}
+	
+	public void setNumero(int unNum){
+		numero = unNum;
+	}
+	
+	public int getNumero(){
+		return numero;
 	}
 	
 	public boolean transfert(Compte unCompte){
@@ -34,5 +54,14 @@ public class Compte {
 		this.debiteSolde(res);
 		unCompte.crediteSolde(res);
 		return true;
+	}
+	
+	public boolean comparer(Compte unCompte){
+		if(this.getSolde() > unCompte.getSolde()){
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
 }
